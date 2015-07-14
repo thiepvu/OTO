@@ -147,7 +147,7 @@ h6 {
 }
 
 h1 {
-	font-size: 48px;
+	font-size: 32px;
 	margin: 33px 0;
 }
 
@@ -200,7 +200,7 @@ mark {
 }
 
 p {
-	margin: 0 0 24px;
+	margin: 0 0 20px;
 }
 
 code,
@@ -779,10 +779,11 @@ img.wp-smiley,
 
 .site {
 	background-color: #fff;
-	border-left: 1px solid #f2f2f2;
-	border-right: 1px solid #f2f2f2;
+	/*border-left: 1px solid #f2f2f2;
+	border-right: 1px solid #f2f2f2;*/
 	margin: 0 auto;
-	max-width: 1600px;
+	/*max-width: 1600px;*/
+	max-width: 1170px;
 	width: 100%;
 }
 
@@ -793,14 +794,14 @@ img.wp-smiley,
 .site-main .sidebar-container {
 	height: 0;
 	position: absolute;
-	top: 40px;
+	top: 20px;
 	width: 100%;
 	z-index: 1;
 }
 
 .site-main .sidebar-inner {
 	margin: 0 auto;
-	max-width: 1040px;
+	max-width: 1170px;
 }
 
 
@@ -819,10 +820,10 @@ img.wp-smiley,
 }
 
 .site-header .home-link {
-	color: #141412;
+	color: #A40000;
 	display: block;
 	margin: 0 auto;
-	max-width: 1080px;
+	max-width: 1170px;
 	min-height: 230px;
 	padding: 0 20px;
 	text-decoration: none;
@@ -855,7 +856,7 @@ img.wp-smiley,
 .main-navigation {
 	clear: both;
 	margin: 0 auto;
-	max-width: 1080px;
+	max-width: 1170px;
 	min-height: 45px;
 	position: relative;
 }
@@ -872,9 +873,9 @@ div.nav-menu > ul {
 }
 
 .nav-menu li a {
-	color: #141412;
+	color: #ffffff;
 	display: block;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1;
 	padding: 15px 20px;
 	text-decoration: none;
@@ -938,8 +939,7 @@ ul.nav-menu .focus > ul,
 .nav-menu .current_page_ancestor > a,
 .nav-menu .current-menu-item > a,
 .nav-menu .current-menu-ancestor > a {
-	color: #bc360a;
-	font-style: italic;
+	background-color: #220e10;
 }
 
 .menu-toggle {
@@ -948,9 +948,9 @@ ul.nav-menu .focus > ul,
 
 /* Navbar */
 .navbar {
-	background-color: #f7f5e7;
+	background-color: #a40000;
 	margin: 0 auto;
-	max-width: 1600px;
+	max-width: 1170px;
 	width: 100%;
 }
 
@@ -992,7 +992,7 @@ ul.nav-menu .focus > ul,
  */
 
 .hentry {
-	padding: 40px 0;
+	padding: 20px 0;
 }
 
 .entry-header,
@@ -1008,8 +1008,8 @@ ul.nav-menu .focus > ul,
 .sidebar .entry-content,
 .sidebar .entry-summary,
 .sidebar .entry-meta {
-	max-width: 1040px;
-	padding: 0 0px 0 376px;
+	max-width: 1170px;
+	padding: 0 0px 0 326px;
 }
 
 
@@ -1028,11 +1028,12 @@ ul.nav-menu .focus > ul,
 }
 
 .entry-header {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .entry-title {
 	font-weight: normal;
+	color: #A40000;
 	margin: 0 0 5px;
 }
 
@@ -1753,7 +1754,7 @@ footer.entry-meta {
 
 .attachment .entry-header {
 	margin-bottom: 0;
-	max-width: 1040px;
+	max-width: 1170px;
 	padding: 30px 0;
 }
 
@@ -1813,7 +1814,7 @@ footer.entry-meta {
 
 .image-navigation {
 	margin: 0 auto;
-	max-width: 1040px;
+	max-width: 1170px;
 	position: relative;
 }
 
@@ -1917,8 +1918,8 @@ footer.entry-meta {
 }
 
 .sidebar .paging-navigation .nav-links {
-	max-width: 1040px;
-	padding: 0 376px 0 60px;
+	max-width: 1170px;
+	padding: 0 0px 0 326px;
 }
 
 .paging-navigation .nav-next {
@@ -1968,11 +1969,11 @@ footer.entry-meta {
 
 .post-navigation .nav-links {
 	margin: 0 auto;
-	max-width: 1040px;
+	max-width: 1170px;
 }
 
 .sidebar .post-navigation .nav-links {
-	padding: 0 376px 0 60px;
+	padding: 0 0px 0 326px;
 }
 
 .post-navigation a[rel="next"] {
@@ -1995,8 +1996,8 @@ footer.entry-meta {
 }
 
 .author.sidebar .author-info {
-	max-width: 1040px;
-	padding: 30px 376px 10px 60px;
+	max-width: 1170px;
+	padding: 30px 0px 10px 326px;
 }
 
 .single .author-info {
@@ -2041,7 +2042,7 @@ footer.entry-meta {
 .archive-meta {
 	font: 300 italic 30px "Source Sans Pro", Helvetica, sans-serif;
 	margin: 0 auto;
-	max-width: 1040px;
+	max-width: 1170px;
 	padding: 30px 0;
 	width: 100%;
 }
@@ -2071,7 +2072,7 @@ footer.entry-meta {
 .page-title {
 	font: 300 italic 30px "Source Sans Pro", Helvetica, sans-serif;
 	margin: 0 auto;
-	max-width: 1040px;
+	max-width: 1170px;
 	padding: 30px 0;
 	width: 100%;
 }
@@ -2085,8 +2086,8 @@ footer.entry-meta {
 
 .sidebar .page-content {
 	margin: 0 auto;
-	max-width: 1040px;
-	padding: 40px 376px 40px 60px;
+	max-width: 1170px;
+	padding: 40px 0px 40px 326px;
 }
 
 
@@ -2126,7 +2127,7 @@ footer.entry-meta {
 .error404 .page-header,
 .error404 .page-content {
 	margin: 0 auto;
-	max-width: 1040px;
+	max-width: 1170px;
 	padding-bottom: 40px;
 	width: 100%;
 }
@@ -2156,9 +2157,9 @@ footer.entry-meta {
 .sidebar .comment-reply-title,
 .sidebar .comment-navigation,
 .sidebar .comment-respond .comment-form {
-	max-width: 1040px;
+	max-width: 1170px;
 	padding-left: 60px;
-	padding-right: 376px;
+	padding-right: 326px;
 }
 
 .comments-title {
@@ -2402,7 +2403,7 @@ footer.entry-meta {
 
 .sidebar .no-comments {
 	padding-left: 60px;
-	padding-right: 376px;
+	padding-right: 326px;
 }
 
 
@@ -2464,8 +2465,11 @@ footer.entry-meta {
 }
 
 .widget .widget-title {
-	font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;
-	margin: 0 0 10px;
+	background: #a40000 none repeat scroll 0 0;
+    color: #fff;
+    font: 500 16px "Source Sans Pro",Helvetica,sans-serif;
+    margin: -20px -20px 20px;
+    padding: 10px 20px;
 }
 
 .widget ul,
@@ -2579,7 +2583,7 @@ footer.entry-meta {
 
 .site-footer .widget-area {
 	margin: 0 auto;
-	max-width: 1040px;
+	max-width: 1170px;
 	width: 100%;
 }
 
@@ -2618,7 +2622,7 @@ footer.entry-meta {
 
 .site-info {
 	margin: 0 auto;
-	max-width: 1040px;
+	max-width: 1170px;
 	padding: 30px 0;
 	width: 100%;
 }
