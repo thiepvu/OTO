@@ -83,7 +83,33 @@ class Fit_Online_Support_Widget extends WP_Widget
 		echo '<script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>';
 		?>
 		<!-- Support group -->
+		<?php if ( !empty( $instance['tel'] ) || !empty( $instance['hotline'] ) || !empty( $instance['email'] ) ) : ?>
 
+		<div id="hotline-area" class="hotline-area">
+
+			<?php if ( !empty( $instance['tel'] ) ) : ?>
+
+				<span class="tel">
+						<span class="label"><?php _e( 'Tel: ', 'fit' ); ?></span>
+		        		<span class="num"><?php echo $instance['tel']; ?></span>
+		        	</span>
+			<?php endif; ?>
+
+			<?php if ( !empty( $instance['hotline'] ) ) : ?>
+
+				<span class="hotline">
+		        		<span class="label"><?php _e( 'Hotline: ', 'fit' ); ?></span>
+		        		<span class="num"><?php echo $instance['hotline']; ?></span>
+		        	</span>
+			<?php endif; ?>
+			<?php if ( !empty( $instance['email'] ) ) : ?>
+				<p class="email">
+					<span><?php _e( 'Email: ', 'fit' ); ?></span>
+					<a href="mailto:<?php echo $instance['email'] ?>"><?php echo $instance['email']; ?></a>
+				</p>
+			<?php endif; ?>
+		</div><!-- end #hotline-area -->
+	<?php endif; ?>
 		<?php for ( $i = 0; $i < $instance['group_num']; $i++ ) : ?>
 		<div id="support-group-<?php echo $i + 1; ?>" class="support-group">
 			<?php if ( !empty( $instance['group_title'][$i] ) ) : ?>
@@ -115,33 +141,7 @@ class Fit_Online_Support_Widget extends WP_Widget
 	<?php endfor; ?>
 
 		<!-- End support group -->
-		<?php if ( !empty( $instance['tel'] ) || !empty( $instance['hotline'] ) || !empty( $instance['email'] ) ) : ?>
-
-		<div id="hotline-area" class="hotline-area">
-
-			<?php if ( !empty( $instance['tel'] ) ) : ?>
-
-				<span class="tel">
-						<span class="label"><?php _e( 'Tel: ', 'fit' ); ?></span>
-		        		<span class="num"><?php echo $instance['tel']; ?></span>
-		        	</span>
-			<?php endif; ?>
-
-			<?php if ( !empty( $instance['hotline'] ) ) : ?>
-
-				<span class="hotline">
-		        		<span class="label"><?php _e( 'Hotline: ', 'fit' ); ?></span>
-		        		<span class="num"><?php echo $instance['hotline']; ?></span>
-		        	</span>
-			<?php endif; ?>
-			<?php if ( !empty( $instance['email'] ) ) : ?>
-				<p class="email">
-					<span><?php _e( 'Email: ', 'fit' ); ?></span>
-					<a href="mailto:<?php echo $instance['email'] ?>"><?php echo $instance['email']; ?></a>
-				</p>
-			<?php endif; ?>
-		</div><!-- end #hotline-area -->
-	<?php endif; ?>
+		
 		<?php
 		if ( !empty( $instance['support_extra'] ) )
 		{

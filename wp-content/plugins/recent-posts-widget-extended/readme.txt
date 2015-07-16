@@ -115,6 +115,7 @@ First, please uncheck the **Use Default Style** option then place the css code b
 	border-bottom: 1px solid #eee;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
+	font-size:30px;
 	list-style-type: none;
 }
 .rpwe-block a {
@@ -127,7 +128,7 @@ First, please uncheck the **Use Default Style** option then place the css code b
 	margin-bottom: 0 !important;
 	margin-top: 0 !important;
 	font-weight: 400;
-	font-size: 12px !important;
+	font-size: 14px !important;
 	line-height: 1.5em;
 }
 .rpwe-thumb {

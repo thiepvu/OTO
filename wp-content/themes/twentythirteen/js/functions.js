@@ -23,10 +23,17 @@
 			var sidebar   = $( '#secondary .widget-area' ),
 			    secondary = ( 0 === sidebar.length ) ? -40 : sidebar.height(),
 			    margin    = $( '#tertiary .widget-area' ).height() - $( '#content' ).height() - secondary;
+			    leftSidebar = $( '#tertiary .widget-area' ).height();
+			    contentBody = $( '#content' ).height();
 
-			if ( margin > 0 && _window.innerWidth() > 999 ) {
-				$( '#colophon' ).css( 'margin-top', margin + 'px' );
-			}
+			    if(leftSidebar > contentBody){
+			    	$( '#colophon' ).css( 'margin-top', leftSidebar - contentBody + 20 + 'px' );
+			    }
+
+
+			// if ( margin > 0 && _window.innerWidth() > 999 ) {
+			// 	$( '#colophon' ).css( 'margin-top', margin + 'px' );
+			// }
 		}
 	} );
 
@@ -120,14 +127,14 @@
 	 * Arranges footer widgets vertically.
 	 */
 	if ( $.isFunction( $.fn.masonry ) ) {
-		var columnWidth = body.is( '.sidebar' ) ? 228 : 245;
+		// var columnWidth = body.is( '.sidebar' ) ? 228 : 245;
 
-		$( '#secondary .widget-area' ).masonry( {
-			itemSelector: '.widget',
-			columnWidth: columnWidth,
-			gutterWidth: 20,
-			isRTL: body.is( '.rtl' )
-		} );
+		// $( '#secondary .widget-area' ).masonry( {
+		// 	itemSelector: '.widget',
+		// 	columnWidth: columnWidth,
+		// 	gutterWidth: 20,
+		// 	isRTL: body.is( '.rtl' )
+		// } );
 	}
 	jQuery(window).scroll(function(){
         if(jQuery(window).scrollTop()!=0){

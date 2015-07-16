@@ -317,12 +317,45 @@ if ( ! function_exists( 'twentythirteen_entry_meta' ) ) :
  *
  * @since Twenty Thirteen 1.0
  */
+function get_current_weekday() {
+	//date_default_timezone_set('Asia/Ho_Chi_Minh');
+	$weekday = get_the_date();
+	$weekday = date('l', strtotime($weekday));
+	$weekday = strtolower($weekday);
+
+	switch($weekday) {
+		case 'monday':
+		$weekday = 'Thứ hai';
+		break;
+		case 'tuesday':
+		$weekday = 'Thứ ba';
+		break;
+		case 'wednesday':
+		$weekday = 'Thứ tư';
+		break;
+		case 'thursday':
+		$weekday = 'Thứ năm';
+		break;
+		case 'friday':
+		$weekday = 'Thứ sáu';
+		break;
+		case 'saturday':
+		$weekday = 'Thứ bảy';
+		break;
+		default:
+		$weekday = 'Chủ nhật';
+		break;
+	}
+	return $weekday.', ';
+}
 function twentythirteen_entry_meta() {
 	if ( is_sticky() && is_home() && ! is_paged() )
 		echo '<span class="featured-post">' . esc_html__( 'Sticky', 'twentythirteen' ) . '</span>';
 
 	if ( ! has_post_format( 'link' ) && 'post' == get_post_type() )
-		twentythirteen_entry_date();
+		//twentythirteen_entry_date();
+		echo get_current_weekday();
+		echo '<time datetime="'.get_the_date("c").'" pubdate>'.get_the_date("d/m/Y | H:i:s").'</time> ';
 
 	// Translators: used between list items, there is a space after the comma.
 	$categories_list = get_the_category_list( __( ', ', 'twentythirteen' ) );
