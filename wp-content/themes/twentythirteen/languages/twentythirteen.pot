@@ -127,7 +127,7 @@ msgid "View all % comments"
 msgstr ""
 
 #: content-none.php:12
-msgid "Nothing Found"
+msgid "Không tìm thấy"
 msgstr ""
 
 #: content-none.php:18

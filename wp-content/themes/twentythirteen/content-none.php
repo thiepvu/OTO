@@ -9,7 +9,7 @@
 ?>
 
 <header class="page-header">
-	<h1 class="page-title"><?php _e( 'Nothing Found', 'twentythirteen' ); ?></h1>
+	<h1 class="page-title"><?php _e( 'Không tìm thấy', 'twentythirteen' ); ?></h1>
 </header>
 
 <div class="page-content">
@@ -24,7 +24,7 @@
 
 	<?php else : ?>
 
-	<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'twentythirteen' ); ?></p>
+	<p><?php _e( 'Có vẻ như chúng ta không thể tìm thấy những gì bạn đang tìm kiếm. Có lẽ tìm kiếm có thể giúp.', 'twentythirteen' ); ?></p>
 	<?php get_search_form(); ?>
 
 	<?php endif; ?>
