@@ -39,7 +39,7 @@ get_header(); ?>
 			                          <div class="placard-content">
 			                            <!-- Title and Meta -->  
 			                            <a href="<?php the_permalink(); ?>"><?php the_title() ?></a>
-			                            <span><b>Price:</b> <?php echo $product_price; ?> VND</span>                           
+			                            <span><b>Xuất xứ:</b> <?php echo $product_price; ?></span>                           
 			                          </div>
 			                        </li>
 		              	<?php

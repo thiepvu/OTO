@@ -19,7 +19,7 @@
 
 	<?php elseif ( is_search() ) : ?>
 
-	<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with different keywords.', 'twentythirteen' ); ?></p>
+	<p><?php _e( 'Xin lỗi, nhưng không có gì phù hợp với điều kiện tìm kiếm của bạn. Vui lòng thử lại với từ khoá khác nhau.', 'twentythirteen' ); ?></p>
 	<?php get_search_form(); ?>
 
 	<?php else : ?>

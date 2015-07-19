@@ -29,7 +29,7 @@ get_header(); ?>
 							<h2 class="entry-title"><?php the_title() ?></h2>
 							<p><span><b>Mã sản phẩm:</b> </span><span><?php echo $product_masp; ?></span></p>
 							<p><span><b>Chất liệu:</b> </span><span><?php echo $product_type; ?></span></p>
-							<p><span><b>Giá:</b> </span><span><?php echo $product_price; ?> VND</span></p>
+							<p><span><b>Xuất xứ:</b> </span><span><?php echo $product_price; ?></span></p>
 						</div>
 						<div class="product-img">
 							<img src="<?php echo esc_url( $product_thumbnail ); ?>" class="">
