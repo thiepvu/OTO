@@ -103,12 +103,12 @@ function twentythirteen_header_style() {
 		}
 		@media (max-width: 767px) {
 			.site-header {
-				background-size: 768px auto;
+				background-size: 1200px auto;
 			}
 		}
 		@media (max-width: 359px) {
 			.site-header {
-				background-size: 360px auto;
+				background-size: 767px auto;
 			}
 		}
 	<?php

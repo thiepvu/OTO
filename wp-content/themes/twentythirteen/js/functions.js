@@ -88,7 +88,7 @@
 	 * @since Twenty Thirteen 1.5
 	 */
 	function onResizeARIA() {
-		if ( 643 > _window.width() ) {
+		if ( 1500 > _window.width() ) {
 			button.attr( 'aria-expanded', 'false' );
 			menu.attr( 'aria-expanded', 'false' );
 			button.attr( 'aria-controls', 'primary-menu' );

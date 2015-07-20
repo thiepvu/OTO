@@ -832,11 +832,11 @@ img.wp-smiley,
 }
 
 .site-header .site-title:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .site-title {
-	font-size: 50px;
+	font-size: 39px;
 	font-weight: bold;
 	line-height: 1;
 	margin: 0;
@@ -2727,6 +2727,103 @@ footer.entry-meta {
 }
 
 @media (max-width: 999px) {
+	.home-products li {
+		width: 49%!important;
+	}
+
+	/* Small menu */
+	.menu-toggle {
+		cursor: pointer;
+		display: inline-block;
+		font: bold 16px/1.3 "Arial", Helvetica, sans-serif;
+		margin: 0;
+	}
+
+	.menu-toggle,
+	.menu-toggle:hover,
+	.menu-toggle:focus,
+	.menu-toggle:active {
+		background: none;
+		border: none;
+		color: #fff;
+		padding: 20px 13px 25px 20px;
+	}
+
+	.menu-toggle:focus {
+		outline: thin dotted;
+	}
+
+	.menu-toggle:after {
+		box-shadow: 0 0 0 2px white, 0 7px 0 2px white, 0 14px 0 2px white;
+	    content: "";
+	    display: block;
+	    height: 0;
+	    left: 10px;
+	    position: absolute;
+	    top: 15px;
+	    width: 1rem;
+	}
+
+	.toggled-on .menu-toggle:after {
+		box-shadow: 0 0 0 2px white, 0 7px 0 2px white, 0 14px 0 2px white;
+	    content: "";
+	    display: block;
+	    height: 0;
+	    left: 10px;
+	    position: absolute;
+	    top: 15px;
+	    width: 1rem;
+
+	}
+	.toggled-on .nav-menu,
+	.toggled-on .nav-menu > ul {
+		display: block;
+		margin-left: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.toggled-on li,
+	.toggled-on .children {
+		display: block;
+	}
+
+	.toggled-on .nav-menu li > ul {
+		background-color: transparent;
+		display: block;
+		float: none;
+		margin-left: 20px;
+		position: relative;
+		left: auto;
+		top: auto;
+	}
+
+	.toggled-on .nav-menu li > ul a {
+		color: #141412;
+		width: auto;
+	}
+
+	.toggled-on .nav-menu li:hover > a,
+	.toggled-on .nav-menu .children a {
+		background-color: transparent;
+		color: #141412;
+	}
+
+	.toggled-on .nav-menu > li a:hover,
+	.toggled-on .nav-menu > ul a:hover {
+		background-color: #db572f;
+		color: #fff;
+	}
+
+	.toggled-on .nav-menu > li a:focus,
+	.toggled-on .nav-menu > ul a:focus {
+		background-color: #220e10;
+		color: #fff;
+	}
+	ul.nav-menu,
+	div.nav-menu > ul {
+		display: none;
+	}
 	.sidebar .entry-header,
 	.sidebar .entry-content,
 	.sidebar .entry-summary,
@@ -2822,11 +2919,12 @@ footer.entry-meta {
 /* Collapse oversized image and pulled images after iPad breakpoint. */
 @media (max-width: 767px) {
 	.site-header .home-link {
-		min-height: 0;
+		min-height: 150px;
 	}
+
 	.site-title {
-		font-size: 36px;
-		padding: 8px 0 10px;
+		font-size: 30px;
+		padding: 40px 0 10px;
 	}
 	.entry-content img.alignleft,
 	.entry-content .wp-caption.alignleft {
@@ -2852,7 +2950,20 @@ footer.entry-meta {
 
 @media (max-width: 643px) {
 	.site-title {
-		font-size: 30px;
+		font-size: 24px;
+	}
+
+	.site-description {
+		font-size: 14px;
+	}
+	.home-products li {
+		width: 100% !important;
+	}
+
+	.product-detail .product-des, .product-detail .product-img {
+		width: 99% !important;
+		margin-top: 0 !important;
+		float: none!important;
 	}
 
 	#content .entry-header,
@@ -2880,90 +2991,6 @@ footer.entry-meta {
 		padding-left: 35px;
 	}
 
-	/* Small menu */
-	.menu-toggle {
-		cursor: pointer;
-		display: inline-block;
-		font: bold 16px/1.3 "Arial", Helvetica, sans-serif;
-		margin: 0;
-	}
-
-	.menu-toggle,
-	.menu-toggle:hover,
-	.menu-toggle:focus,
-	.menu-toggle:active {
-		background: none;
-		border: none;
-		color: #fff;
-		padding: 12px 0 12px 20px;
-	}
-
-	.menu-toggle:focus {
-		outline: thin dotted;
-	}
-
-	.menu-toggle:after {
-		content: "\f502";
-		font-size: 12px;
-		padding-left: 8px;
-		vertical-align: -4px;
-	}
-
-	.toggled-on .menu-toggle:after {
-		content: "\f500";
-		vertical-align: 2px;
-	}
-
-	.toggled-on .nav-menu,
-	.toggled-on .nav-menu > ul {
-		display: block;
-		margin-left: 0;
-		padding: 0;
-		width: 100%;
-	}
-
-	.toggled-on li,
-	.toggled-on .children {
-		display: block;
-	}
-
-	.toggled-on .nav-menu li > ul {
-		background-color: transparent;
-		display: block;
-		float: none;
-		margin-left: 20px;
-		position: relative;
-		left: auto;
-		top: auto;
-	}
-
-	.toggled-on .nav-menu li > ul a {
-		color: #141412;
-		width: auto;
-	}
-
-	.toggled-on .nav-menu li:hover > a,
-	.toggled-on .nav-menu .children a {
-		background-color: transparent;
-		color: #141412;
-	}
-
-	.toggled-on .nav-menu > li a:hover,
-	.toggled-on .nav-menu > ul a:hover {
-		background-color: #db572f;
-		color: #fff;
-	}
-
-	.toggled-on .nav-menu > li a:focus,
-	.toggled-on .nav-menu > ul a:focus {
-		background-color: #220e10;
-		color: #fff;
-	}
-
-	ul.nav-menu,
-	div.nav-menu > ul {
-		display: none;
-	}
 
 	#content .featured-gallery {
 		padding-left: 24px;
@@ -3046,8 +3073,13 @@ footer.entry-meta {
 @media (max-width: 359px) {
 	.site-title {
 		font-weight: normal;
+		display: none;
+	}
+	.site-header .home-link {
+		min-height: 100px;
 	}
 	.site-description {
+		display: none;
 	    clip: rect(1px, 1px, 1px, 1px);
 	    position: absolute;
 	}
@@ -3276,7 +3308,7 @@ footer.entry-meta {
 	margin-bottom: 30px;
 }
 .home-products li img {
-	height: 150px;
+	max-height: 150px;
 }
 .home-products li .placard-content {
 	margin-top: 20px;
